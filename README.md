@@ -16,4 +16,4 @@ In the project directory, you can run:
 
 Screenshots:
 
-![alt text]('./assets/imgs/main.png')
+![main image](assets/imgs/main.png)
