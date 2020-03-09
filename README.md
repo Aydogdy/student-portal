@@ -16,18 +16,18 @@ In the project directory, you can run:
 
 Screenshots:
 
-Default State of the app (Init State)
+## Default State of the app (Init State)
 
 ![init state](assets/imgs/main.png)
 
-Add Student action
+## Add Student action
 
 ![add student](assets/imgs/add.png)
 
-Delete Student action
+## Delete Student action
 
 ![add student](assets/imgs/delete.png)
 
-Edit Student action
+## Edit Student action
 
 ![add student](assets/imgs/edit.png)
