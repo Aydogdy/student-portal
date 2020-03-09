@@ -16,4 +16,6 @@ In the project directory, you can run:
 
 Screenshots:
 
+Default State of the app (Init State)
+
 ![main image](assets/imgs/main.png)
