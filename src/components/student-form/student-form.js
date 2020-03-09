@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './student-form.scss';
+
 export default class StudentForm extends Component {
     
     state = {
@@ -73,52 +75,67 @@ export default class StudentForm extends Component {
     
         return (
             <form onSubmit={this.onSubmit}>
-                <div className="form-group">
-                    <label htmlFor="fname">First Name</label>
-                    <input type="text"
-                            className="form-control"
-                            id="fname"
-                            name="firstName"
-                            onChange={this.formChangeHandler}
-                            value={firstName} />
+                <div className="row">
+                    <div className="col-6">
+                        <div className="form-group">
+                            <label htmlFor="fname">Имя</label>
+                            <input type="text"
+                                    className="form-control"
+                                    id="fname"
+                                    name="firstName"
+                                    onChange={this.formChangeHandler}
+                                    value={firstName} />
+                        </div>
+                    </div>
+
+                    <div className="col-6">
+                        <div className="form-group">
+                            <label htmlFor="lname">Фамилия</label>
+                            <input type="text"
+                                    className="form-control"
+                                    id="lname"
+                                    name="lastName"
+                                    value={lastName}
+                                    onChange={this.formChangeHandler} />
+                        </div>
+                    </div> 
+                </div> 
+                <div className="row">
+                    <div className="col-6">
+                        <div className="form-group">
+                            <label htmlFor="dofb">Дата рождения</label>
+                            <input type="text"
+                                    className="form-control"
+                                    id="dofb"
+                                    name="dofb"
+                                    value={dofb}
+                                    onChange={this.formChangeHandler} />
+                        </div>
+                    </div>
+
+                    <div className="col-6">
+                        <div className="form-group">
+                            <label htmlFor="grade">Успеваемость</label>
+                                <select className="form-control"
+                                        id="grade"
+                                        name="grade"
+                                        value={ grade }
+                                        onChange={this.formChangeHandler}>
+                                <option>Выбрать</option>
+                                <option value="1">Неудовлетворительно</option>
+                                <option value="2">Удовлетворительно</option>
+                                <option value="3">Хорошо</option>
+                                <option value="4">Отлично</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
 
-                <div className="form-group">
-                    <label htmlFor="lname">Last Name</label>
-                    <input type="text"
-                            className="form-control"
-                            id="lname"
-                            name="lastName"
-                            value={lastName}
-                            onChange={this.formChangeHandler} />
+                <div className="row">
+                    <div className="col-12 btn-row">
+                        <button type="submit" className="btn btn-lg btn-primary">Сохранить</button>
+                    </div>
                 </div>
-
-                <div className="form-group">
-                    <label htmlFor="dofb">Date Of Birth</label>
-                    <input type="text"
-                            className="form-control"
-                            id="dofb"
-                            name="dofb"
-                            value={dofb}
-                            onChange={this.formChangeHandler} />
-                </div>
-
-                <div className="form-group">
-                    <label htmlFor="grade">Grade</label>
-                        <select className="form-control"
-                                id="grade"
-                                name="grade"
-                                value={ grade }
-                                onChange={this.formChangeHandler}>
-                        <option>Оценка</option>
-                        <option value="1">Неудовлетворительно</option>
-                        <option value="2">Удовлетворительно</option>
-                        <option value="3">Хорошо</option>
-                        <option value="4">Отлично</option>
-                    </select>
-                </div>
-
-                <button type="submit" className="btn btn-primary">Submit</button>
             </form>
         )
     }
