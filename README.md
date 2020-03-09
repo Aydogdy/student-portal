@@ -13,3 +13,7 @@ Once you got it locally, run:
 In the project directory, you can run:
 
 ### `npm start`
+
+Screenshots:
+
+![alt text]('./assets/imgs/main.png')
