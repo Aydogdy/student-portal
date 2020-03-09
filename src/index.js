@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux'
 import {createStore} from 'redux';
 import './index.css';
-import App from './components/app';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
-import studentReducer from './reducers/student-reducers';
+import studentReducer from './reducers/studentReducer';
 
 let initialState = {
     students: [
-        { id: 1, firstName: 'Сергей', lastName: 'Иванов', dofb: '11/20/1995', grade: 2 },
-        { id: 2, firstName: 'Александр', lastName: 'Петров', dofb: '05/17/1993', grade: 3 },
+        { id: 1, firstName: 'Иван', lastName: 'Иванов', dofb: '04/11/1995', grade: 1 },
+        { id: 2, firstName: 'Мария', lastName: 'Голубкина', dofb: '12/03/1995', grade: 3 },
+        { id: 3, firstName: 'Андрей', lastName: 'Белов', dofb: '01/12/1991', grade: 2 },
     ] 
 }
 

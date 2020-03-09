@@ -8,12 +8,14 @@ export function addStudent(student) {
         payload: student
     }
 }
-export function deleteStudent(id) {
+    
+export function deleteStudent(Id) {
     return {
         type: DELETE_STUDENT,
-        payload: id
+        payload: Id
     }
 }
+    
 export function updateStudent(student) {
     return {
         type: UPDATE_STUDENT,

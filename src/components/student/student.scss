@@ -1,0 +1,27 @@
+.bs-card {
+    margin: 20px 0px;
+    .card-header {
+        background-color: rgb(163, 238, 165);
+    }
+}
+
+.card-text {
+    padding: 2px;
+    font-size: 14px;
+    .val {
+        font-weight: 600;
+        color: #212529;
+    }
+}
+
+.bs-icon {
+    margin-right: 15px;
+}
+
+.bs-btn-group {
+    text-align: right;
+    padding-top: 20px;
+    button {
+        margin-right: 4px;
+    }
+}
