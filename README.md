@@ -18,4 +18,16 @@ Screenshots:
 
 Default State of the app (Init State)
 
-![main image](assets/imgs/main.png)
+![init state](assets/imgs/main.png)
+
+Add Student action
+
+![add student](assets/imgs/add.png)
+
+Delete Student action
+
+![add student](assets/imgs/delete.png)
+
+Edit Student action
+
+![add student](assets/imgs/edit.png)
